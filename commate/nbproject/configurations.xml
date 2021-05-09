@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles" displayName="头文件" projectFiles="true">
+      <itemPath>src/commate.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles" displayName="源文件" projectFiles="true">
+      <itemPath>src/commate.c</itemPath>
+      <itemPath>src/main.c</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles" displayName="资源文件" projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles" displayName="重要文件" projectFiles="false">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibFileItem>../libs/readconf/dist/Debug/GNU-Linux/libreadconf.a</linkerLibFileItem>
+            <linkerLibFileItem>../libs/serialcom/dist/Debug/GNU-Linux/libserialcom.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lpthread</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="src/commate.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/commate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>GNU_GWS5000_4_4_14|GNU</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>mips-openwrt-linux-gcc</commandlineTool>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandlineTool>mips-openwrt-linux-g++</commandlineTool>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/commate</output>
+          <commandlineTool>mips-openwrt-linux-g++</commandlineTool>
+          <linkerLibItems>
+            <linkerLibFileItem>../libs/readconf/dist/Release/GNU_GWS5000_4_4_14-Linux/libreadconf.a</linkerLibFileItem>
+            <linkerLibFileItem>../libs/serialcom/dist/Release/GNU_GWS5000_4_4_14-Linux/libserialcom.a</linkerLibFileItem>
+          </linkerLibItems>
+          <commandLine>-lpthread</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="src/commate.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/commate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
